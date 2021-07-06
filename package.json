@@ -25,5 +25,8 @@
   "type": "module",
   "dependencies": {
     "svelte-moveable": "^0.17.3"
+  },
+  "engines": {
+    "node":"^12.20 || >=14.13"
   }
 }
