@@ -1,0 +1,29 @@
+{
+  "name": "shelfgenie-web",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "node-sass": "^6.0.1",
+    "prettier": "^2.3.2",
+    "prettier-plugin-svelte": "^2.3.1",
+    "rollup-plugin-css-only": "^3.1.0",
+    "sass": "^1.35.1",
+    "svelte": "^3.38.3",
+    "svelte-check": "^2.2.0",
+    "svelte-preprocess": "^4.7.3",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "type": "module",
+  "dependencies": {
+    "svelte-moveable": "^0.17.3"
+  }
+}
