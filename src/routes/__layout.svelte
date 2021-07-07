@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<title>The New ShelfGenie</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	<style lang="sass">
 		@import '../styles/main'
 	</style>
