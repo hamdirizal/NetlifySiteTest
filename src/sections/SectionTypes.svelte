@@ -33,6 +33,7 @@ if(data && Array.isArray(data)){
 	</div>
 </section>
 <style lang="sass">
+	@use 'sass:math'
 	$gap: 60px
 	$gap-tablet: 40px
 	.SectionTypes
