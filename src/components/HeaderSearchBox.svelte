@@ -1,4 +1,5 @@
 <script>
+import IconSearch2 from "/src/svgs/IconSearch2.svelte"
 let openedClassName = ''
 
 let searchInputElement;
@@ -20,7 +21,7 @@ function closeSearch(){
 		<div class="inputbox">
 			<input type="text" placeholder="Search.." bind:this={searchInputElement}>
 		</div>
-		<button type="submit"></button>
+		<button type="submit"><IconSearch2 /></button>
 	</form>
 	<a href="#/" on:click|preventDefault|stopPropagation={openSearch}  class="toggle"></a>
 </div>
@@ -66,10 +67,13 @@ function closeSearch(){
 		right: 6px
 		top: 0
 		z-index: 2
-		background: url(/images/icon-magnifier-white.svg) no-repeat center center
 		border: 0 none
 		-webkit-appearance: none
 		appearance: none
+		background: transparent
+		:global(path)
+			fill: white
+
 	
 	&.is-opened .inputbox
 		opacity: 1

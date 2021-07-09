@@ -17,13 +17,13 @@ import SectionHeader from "/src/components/SectionHeader.svelte";
 			</div>
 		</div>
 		<div class="right">
-			<SectionHeader alignment="left" title="Your Neighbourhood Team" />
+			<SectionHeader alignment="left" title="Your Neighborhood Team" />
 			<div class="detailsbox">
 				<div class="office-title">Main ShelfGenie Headquarter</div>
 				<form  class="searchbox" action="">
 					<h5>Find my ShelfGenie partner</h5>
-					<h6>Enter your home Zip/ Postal Code</h6>
-					<div class="inputbox"><input type="text" placeholder="ZIP/ Postal Code"></div>
+					<h6>Enter your home ZIP or Postal Code</h6>
+					<div class="inputbox"><input type="text" placeholder="ZIP or Postal Code"></div>
 					<div class="message">No franchise covers your area right now. Please call (888) 903-8839 to learn more.</div>
 					<div class="message">Location(s) near you</div>
 					<ul class='results'>

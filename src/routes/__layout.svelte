@@ -3,16 +3,17 @@
 	import SiteHeader2 from "/src/sections/SiteHeader2.svelte";
 	import SiteFooter1 from "/src/sections/SiteFooter1.svelte";
 	import SiteFooter2 from "/src/sections/SiteFooter2.svelte";
+	import SectionDevNotes from "/src/sections/SectionDevNotes.svelte";
 </script>
 
 <svelte:head>
 	<title>The New ShelfGenie</title>
-	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	<style lang="sass">
 		@import '../styles/main'
 	</style>
 </svelte:head>
 
+<SectionDevNotes />
 <SiteHeader1 />
 <SiteHeader2 />
 <slot></slot>

@@ -9,6 +9,7 @@ import CheckboxWithIcon from "/src/components/CheckboxWithIcon.svelte";
 import CheckboxWithImage from "/src/components/CheckboxWithImage.svelte";
 import RadioWithIcon from "/src/components/RadioWithIcon.svelte";
 import IconFormSubmissionSuccess from "/src/svgs/IconFormSubmissionSuccess.svelte";
+	import {formDataToObject} from "/src/js/utils.js";
 
 let currentStep = 1
 
@@ -73,32 +74,10 @@ function restartForm(e){
 	currentStep=1
 }
 
-function startLoading(){
-	isLoading = true
-}
-async function stopLoading(){
-	isLoading = false
-}
-
-function formSubmitted(e){
+function submitForm(e){
 	e.preventDefault()
-	startLoading()	
-	let requestObj = {}
-	for(let pair of (new FormData(e.target)).entries()) {
-		//If not exist in the object, add the item
-		if(!requestObj[pair[0]]){
-			requestObj[pair[0]] = pair[1];
-		}
-		//If already exist, convert it to array, and push the new item
-		else{
-			if(Array.isArray(requestObj[pair[0]])){
-				requestObj[pair[0]].push( pair[1] )
-			}
-			else{
-				requestObj[pair[0]] = [ requestObj[pair[0]], pair[1] ]
-			}
-		}
-	}
+	isLoading = true;
+	let requestObj = formDataToObject(new FormData(e.target));
 	requestObj.name = requestObj.firstname + ' ' + requestObj.lastname;
 	requestObj.status = 'Active';
 	requestObj.gender = 'Male';
@@ -114,7 +93,7 @@ function formSubmitted(e){
 	}).then(res=>{
 		return res.json()
 	}).then(data=>{
-		stopLoading();
+		isLoading = false;
 		if(data && data.code>=200 && data.code<=209){
 			currentStep = 5
 		}
@@ -123,7 +102,7 @@ function formSubmitted(e){
 		}
 	}).catch(e=>{
 		console.log(e)
-		stopLoading();
+		isLoading = false;
 	});
 
 }
@@ -132,7 +111,7 @@ function formSubmitted(e){
 </script>
 <section class="SectionConfigurator" class:is-loading={isLoading===true}>
 	<div class="container">
-		<SectionHeader title="Configure Your Solution" alignment="center" description="Price calculator will show you an estimate average price for your revovation project. "/>
+		<SectionHeader title="Configure Your Solution" alignment="center" description="Price calculator will show you an estimate average price for your renovation project. "/>
 		{#if currentStep <= 4}
 		<ul class="steps">
 			<li class:is-active={currentStep >= 1}>Step 1</li>
@@ -141,7 +120,7 @@ function formSubmitted(e){
 			<li class:is-active={currentStep >= 4}>Step 4</li>
 		</ul>
 		{/if}
-		<form action="" on:submit|preventDefault={ formSubmitted } bind:this={myform}>		
+		<form action="" on:submit|preventDefault={ submitForm } bind:this={myform}>		
 			<ul class="contents">
 				<li class="step-1-content" class:is-active={currentStep===1}>
 					<h3 class="title">What type of solution do you need ?</h3>
@@ -453,7 +432,34 @@ function formSubmitted(e){
 			text-align: center
 			:global(a),:global(button)
 				display: inline-block
-				width: 200px			
+				width: 200px
 
+	@media (max-width: 960px)
+		.grid 
+			margin-left: -5px
+			margin-right: -5px
+			li
+				padding-left: 5px
+				padding-right: 5px
+				margin-bottom: 10px
+
+	@media (max-width: 640px)
+		padding: 40px 0
+		.grid
+			li
+				width: 50%
+		.optin
+			.formrow
+				&.is-half
+					width: 100%
+
+	@media (max-width: 480px)
+		.action
+			flex-wrap: wrap
+			& > :global(a), & > :global(button)
+				margin-left: 0
+				margin-right: 0
+				margin-bottom: 10px
+				width: 100%
 
 </style>

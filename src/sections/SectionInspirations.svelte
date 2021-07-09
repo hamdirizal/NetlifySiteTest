@@ -26,11 +26,7 @@
 <section class="SectionInspirations">
 	<div class="container">
 		<SectionHeader alignment="left" title="Inspiration Gallery" ctaLabel="See More Inspiration" ctaUrl="#/" />
-		<!-- .row-1 -->
 		<CardGrid1 items={cardItems}/>
-		<div class="row-2">
-		</div> 
-		<!-- .row-2 -->
 	</div>
 </section>
 <style lang="sass">

@@ -3,7 +3,7 @@
 </script>
 
 <div class="CardGrid1">
-	{#if items !== null && items.length}
+	{#if items !== null && Array.isArray(items) && items.length}
 		<ul>
 			{#each items as item}
 				<li>

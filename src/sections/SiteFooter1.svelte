@@ -18,7 +18,7 @@
 			<div class="col">
 				<h4>Solutions</h4>
 				<ul>
-					<li><a href="/kitchen-solutions">Kitchen</a></li>
+					<li><a href="/solutions/kitchen">Kitchen</a></li>
 					<li><a href="#/">Pantry</a></li>
 					<li><a href="#/">Bath</a></li>
 					<li><a href="#/">Closet</a></li>

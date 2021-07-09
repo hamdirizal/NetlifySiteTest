@@ -1,0 +1,1 @@
+<svg width="24" height="24" viewBox="0 0 6.35 6.35"><path fill="#fff" d="M2.646.53v2.116H.529v1.058h2.117v2.117h1.058V3.704h2.117V2.646H3.704V.529z"/></svg>

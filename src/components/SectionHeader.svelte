@@ -22,48 +22,58 @@
 	{/if}
 </div>
 <style lang="sass">
-	@import "../styles/_variables"
-	.SectionHeader
-		display: flex
+@import "../styles/_variables"
+.SectionHeader
+	margin-left: auto
+	margin-right: auto
+	display: flex
+	justify-content: space-between
+	margin-bottom: 40px
+	align-items: center		
+
+	.description
+		margin-top: 20px
+		max-width: 700px
+
+	.title
+		margin-bottom: 0
+		position: relative
+		font-size: $font-size-title-2
+		color: $color-text-darkblue
+		position: relative
+		line-height: 1.24
+		padding-bottom: 24px
+		margin-bottom: 0
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 50px
+			border-top: 4px solid $brand-green
+			bottom: 0
+			left: 0
+	
+	&.is-left
 		justify-content: space-between
-		margin-bottom: 40px
-		align-items: center		
 
-		.description
-			margin-top: 20px
-			max-width: 700px
-
+	&.is-center
+		justify-content: center
 		.title
-			margin-bottom: 0
-			position: relative
-			font-size: $font-size-title-2
-			color: $color-text-blue
-			position: relative
-			line-height: 1.24
-			padding-bottom: 14px
-			margin-bottom: 0
+			text-align: center
 			&:after
-				content: ''
-				display: block
-				position: absolute
-				width: 50px
-				border-top: 4px solid $brand-green
-				bottom: 0
-				left: 0
-		
-		&.is-left
-			justify-content: space-between
+				left: 50%
+				transform: translateX(-50%)
+		.description
+			text-align: center
+			max-width: 800px
+		.cta
+			display: none
 
-		&.is-center
-			justify-content: center
-			.title
-				text-align: center
-				&:after
-					left: 50%
-					transform: translateX(-50%)
-			.description
-				text-align: center
-				max-width: 800px
-			.cta
-				display: none
+	@media (max-width: 960px)
+		.title
+			font-size: 40px
+
+	@media (max-width: 640px)
+		.title
+			font-size: 36px
 </style>

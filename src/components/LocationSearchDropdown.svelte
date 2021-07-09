@@ -42,7 +42,7 @@
 		color: white
 		text-decoration: none
 		&:hover
-			color: $color-link-lightgreen
+			color: $brand-green
 
 	.locationbox
 		margin-right: 20px

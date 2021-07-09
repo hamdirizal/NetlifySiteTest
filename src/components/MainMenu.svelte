@@ -1,10 +1,10 @@
 <div class="MainMenu">
 	<ul>
 		<li class="has-sub is-mega">
-			<a href="/kitchen-solutions">Solutions</a>
+			<a href="/solutions/kitchen">Solutions</a>
 			<div>
 				<ul>
-					<li class="title"><a href="/kitchen-solutions">Kitchen</a></li>
+					<li class="title"><a href="/solutions/kitchen">Kitchen</a></li>
 					<li><a href="#/">Cookware</a></li>
 					<li><a href="#/">Bakeware & Storage Containers</a></li>
 					<li><a href="#/">Flat Items</a></li>

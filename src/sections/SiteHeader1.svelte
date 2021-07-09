@@ -19,6 +19,7 @@ import LocationSearchDropdown from "/src/components/LocationSearchDropdown.svelt
 <style lang="sass">
 @import "../styles/_variables"
 @import "../styles/_mixins"
+
 .Header1
 	background: $brand-blue
 	color: white
@@ -52,7 +53,7 @@ import LocationSearchDropdown from "/src/components/LocationSearchDropdown.svelt
 		a
 			color: inherit
 		a:hover
-			color: $color-link-lightgreen
+			color: $brand-green
 
 		li
 			margin-right: 24px

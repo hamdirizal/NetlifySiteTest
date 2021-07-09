@@ -11,7 +11,7 @@
 				<ul class="list">
 					<li>
 						<span class="pic"><i><img src="/images/icon-hiw-consultation.svg" alt=""></i></span>
-						<h5 class="title">Free Consulting and custom solution</h5>
+						<h5 class="title">Free design consultation and custom solution</h5>
 					</li>
 					<li>
 						<span class="pic"><i><img src="/images/icon-hiw-design.svg" alt=""></i></span>

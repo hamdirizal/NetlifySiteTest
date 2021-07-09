@@ -14,7 +14,6 @@ import SectionLastCta from "/src/sections/SectionLastCta.svelte";
 import SectionBlogFeatured from "/src/sections/SectionBlogFeatured.svelte";
 </script>
 
-<h1>Test 001</h1>
 <SectionHomeHero />
 <SectionBenefitsBar />
 <SectionImageQuote />
