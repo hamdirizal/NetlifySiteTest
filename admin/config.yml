@@ -27,3 +27,17 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+  - name: "products"
+    label_singular: "Product"
+    folder: "_posts/product"
+    create: true
+    slug: "product/{{slug}}"
+    preview_path: "product/{{slug}}"
+    fields: 
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Product Image"
+        name: "product_image"
+        widget: "image"
+        required: false
