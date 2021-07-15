@@ -37,11 +37,11 @@ collections:
       - label: "Main Navigation"
         name: "main_navigation"
         file: "_content/main_navigation.yml"
-        widget: list
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Url, name: url, widget: string}
-          - label: "Type"
-            name: "type"
-            widget: "select"
-            options: ["default", "megamenu"]
+          - label: "Items"
+            name: "items"
+            widget: list
+            field: 
+              - {label: Title, name: title, widget: string}
+              - {label: Url, name: url, widget: string}
+              - label: "Type"
