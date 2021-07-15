@@ -6,7 +6,7 @@ publish_mode: editorial_workflow # Allows you to save drafts before publishing t
 media_folder: static/uploads # Where media files are stored
 public_folder: /uploads # The src attribute for uploaded media will begin with this
 
-site_url: https://shelfgeniecom.netlify.app
+site_url: https://thirsty-agnesi-5a1818.netlify.app
 
 collections:
   - name: "posts"
