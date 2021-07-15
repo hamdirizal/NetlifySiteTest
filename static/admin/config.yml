@@ -46,5 +46,6 @@ collections:
               - {label: Url, name: url, widget: string}
               - label: "Type"
                 name: "type"
+                required: false
                 widget: "select"
                 options: ["default", "megamenu"]
