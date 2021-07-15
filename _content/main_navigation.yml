@@ -4,7 +4,35 @@ type: default
 items:
   - title: Solutions
     url: "#/"
-    type: default
+    type: megamenu
+    children:
+      - title: Kitchen
+        url: "#/"
+        columnIndex: 1
+        children:
+          - title: Cookware
+            url: "#/"
+          - title: Bakeware & Storage Containers
+            url: "#/"
+          - title: Flat Items
+            url: "#/"
+          - title: Under the Sink
+            url: "#/"
+          - title: Trash/ Recycling
+            url: "#/"
+          - title: Spices
+            url: "#/"
+          - title: Overhead storage
+            url: "#/"
+      - title: Pantry
+        url: "#/"
+        columnIndex: 2
+      - title: Bathroom
+        url: "#/"
+        columnIndex: 3
+      - title: "New: Closets ShelfGenie"
+        url: "#/"
+        columnIndex: 4
   - title: Inspiration
     url: "#/"
     type: default
