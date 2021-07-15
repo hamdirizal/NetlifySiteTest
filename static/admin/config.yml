@@ -17,3 +17,16 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "products"
+    label_singular: "Product"
+    folder: "_posts/product"
+    create: true
+    slug: "product/{{slug}}"
+    fields: 
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Product Image"
+        name: "product_image"
+        widget: "image"
+        required: false
