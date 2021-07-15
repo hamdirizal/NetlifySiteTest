@@ -45,3 +45,6 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Url, name: url, widget: string}
               - label: "Type"
+                name: "type"
+                widget: "select"
+                options: ["default", "megamenu"]
