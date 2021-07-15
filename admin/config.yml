@@ -8,4 +8,22 @@ public_folder: /uploads # The src attribute for uploaded media will begin with t
 
 site_url: https://shelfgeniecom.netlify.app
 
-collections: []
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "_posts/blog"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "blog/{{slug}}"
+    fields:
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        required: false
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
