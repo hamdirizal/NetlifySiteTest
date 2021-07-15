@@ -1,3 +1,19 @@
 title: Solutions
 url: "#/"
 type: default
+items:
+  - title: Solutions
+    url: "#/"
+    type: default
+  - title: Inspiration
+    url: "#/"
+    type: default
+  - title: How We Work
+    url: "#/"
+    type: default
+  - title: About Us
+    url: "#/"
+    type: default
+  - title: Resources
+    url: "#/"
+    type: default
